@@ -12,7 +12,12 @@ stdbuf -oL -eL bash -c "true" 2>/dev/null || true
 # --- Configuration & Initialization ---
 DEBUG=false
 SUBNETS=("192.168.0.0/24" "192.168.8.0/24")
-INTERFACES=("enxa453eed5dd26" "wlp99s0")
+# Auto-detect network interfaces (exclude loopback)
+INTERFACES=($(ip link show | grep -E "^[0-9]+:" | grep -v "lo:" | awk '{print $2}' | sed 's/:$//' | head -2))
+# Fallback to common interface names if auto-detection fails
+if [ ${#INTERFACES[@]} -eq 0 ]; then
+    INTERFACES=("eth0" "wlan0")
+fi
 BASE_DIR=$(dirname "$(dirname "$(readlink -f "$0")")")
 LOG_DIR="$BASE_DIR/logs"
 mkdir -p "$LOG_DIR"

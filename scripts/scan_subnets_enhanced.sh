@@ -10,7 +10,12 @@ THREADS="${1:-50}"
 TIMEOUT="${2:-1000}"
 DEBUG=false
 SUBNETS=()
-INTERFACES=("enxa453eed5dd26" "wlp99s0")
+# Auto-detect network interfaces (exclude loopback)
+INTERFACES=($(ip link show | grep -E "^[0-9]+:" | grep -v "lo:" | awk '{print $2}' | sed 's/:$//' | head -2))
+# Fallback to common interface names if auto-detection fails
+if [ ${#INTERFACES[@]} -eq 0 ]; then
+    INTERFACES=("eth0" "wlan0")
+fi
 # Top 10 most common ports worldwide
 TOP_PORTS="22,80,443,3389,3306,8080,21,25,110,143"
 

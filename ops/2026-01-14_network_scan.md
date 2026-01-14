@@ -17,9 +17,9 @@ Improved the network discovery process to match results from tools like "Angry I
 | --- | --- | --- |
 | 192.168.0.1 | _gateway | ARP, fping, nmap |
 | 192.168.0.198 | - | ARP, nmap |
-| 192.168.0.229 | dxm-ROG-Zephyrus-G16-GA605WI | fping, nmap |
-| 192.168.8.1 | homerouter.cpe | ARP, fping, nmap |
-| 192.168.8.100 | dxm-ROG-Zephyrus-G16-GA605WI-GA605WI | fping, nmap |
+| 192.168.0.229 | laptop-hostname | fping, nmap |
+| 192.168.8.1 | router.local | ARP, fping, nmap |
+| 192.168.8.100 | device-hostname | fping, nmap |
 | 192.168.8.101 | iPhone | ARP, fping |
 | 192.168.8.109 | ADY-LX9 | fping, nmap |
 | 192.168.8.114 | OpenWrt | fping |
