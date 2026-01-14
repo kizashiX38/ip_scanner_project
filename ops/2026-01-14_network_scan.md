@@ -20,15 +20,15 @@ Improved the network discovery process to match results from tools like "Angry I
 | 192.168.0.229 | laptop-hostname | fping, nmap |
 | 192.168.8.1 | router.local | ARP, fping, nmap |
 | 192.168.8.100 | device-hostname | fping, nmap |
-| 192.168.8.101 | iPhone | ARP, fping |
-| 192.168.8.109 | ADY-LX9 | fping, nmap |
-| 192.168.8.114 | OpenWrt | fping |
-| 192.168.8.149 | H88H | fping |
-| 192.168.8.150 | NX779J | ARP, fping |
-| 192.168.8.154 | yeelink-light-color2_miapfef9 | ARP, fping |
+| 192.168.8.101 | mobile-device | ARP, fping |
+| 192.168.8.109 | tablet-device | fping, nmap |
+| 192.168.8.114 | router-device | fping |
+| 192.168.8.149 | smart-device-1 | fping |
+| 192.168.8.150 | smart-device-2 | ARP, fping |
+| 192.168.8.154 | iot-device | ARP, fping |
 
 ## Observations
-- Some hosts (e.g., iPhone, ADY-LX9) only respond to specific discovery methods like ARP or persistent `fping` due to power-saving modes.
+- Some hosts (e.g., mobile devices, tablets) only respond to specific discovery methods like ARP or persistent `fping` due to power-saving modes.
 - Latencies for certain devices were observed as high as 2000ms+ in external tools, requiring higher timeouts (`--host-timeout 20s`) in our automation.
 - `arp-scan` proved most reliable for local Layer 2 discovery.
 

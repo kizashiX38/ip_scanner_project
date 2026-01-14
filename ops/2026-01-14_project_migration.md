@@ -6,11 +6,13 @@
 Created a standalone project directory for the IP scanner and migrated all relevant scripts, logs, and reports. Updated the automation script to use relative paths for better portability.
 
 ## New Project Structure
-`/home/dxm/Documents/dev_xubuntu/ip_scanner_project/`
-- `scripts/`: Contains `scan_subnets.sh` (updated to use dynamic paths).
-- `ops/`: Contains operational reports.
-- `logs/`: Contains network scan execution logs.
-- `network_scan_results_*.txt`: Consolidated scan results.
+```
+ip_scanner_project/
+├── scripts/          # Contains scan_subnets.sh (updated to use dynamic paths)
+├── ops/              # Contains operational reports
+├── logs/             # Contains network scan execution logs
+└── results/          # Consolidated scan results
+```
 
 ## Changes Made
 1.  **Directory Creation**: Created `ip_scanner_project` and its subdirectories.

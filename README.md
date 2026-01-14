@@ -230,7 +230,8 @@ ip_scanner_project/
 
 Edit `scripts/scan_subnets_enhanced.sh`:
 ```bash
-INTERFACES=("enxa453eed5dd26" "wlp99s0")  # Your network interfaces
+# Interfaces are auto-detected, but you can manually set them:
+INTERFACES=("eth0" "wlan0")  # Your network interfaces
 ```
 
 Find your interfaces:
