@@ -72,7 +72,7 @@ pip install textual rich
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/ip_scanner_project.git
+git clone https://github.com/kizashiX38/ip_scanner_project.git
 cd ip_scanner_project
 ```
 
