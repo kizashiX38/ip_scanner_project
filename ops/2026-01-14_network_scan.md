@@ -16,16 +16,16 @@ Improved the network discovery process to match results from tools like "Angry I
 | IP Address | Hostname / Info | Discovery Method |
 | --- | --- | --- |
 | 192.168.0.1 | _gateway | ARP, fping, nmap |
-| 192.168.0.198 | - | ARP, nmap |
-| 192.168.0.229 | laptop-hostname | fping, nmap |
+| 192.168.0.100 | - | ARP, nmap |
+| 192.168.0.101 | laptop-hostname | fping, nmap |
 | 192.168.8.1 | router.local | ARP, fping, nmap |
-| 192.168.8.100 | device-hostname | fping, nmap |
-| 192.168.8.101 | mobile-device | ARP, fping |
-| 192.168.8.109 | tablet-device | fping, nmap |
-| 192.168.8.114 | router-device | fping |
-| 192.168.8.149 | smart-device-1 | fping |
-| 192.168.8.150 | smart-device-2 | ARP, fping |
-| 192.168.8.154 | iot-device | ARP, fping |
+| 192.168.8.10 | device-hostname | fping, nmap |
+| 192.168.8.11 | mobile-device | ARP, fping |
+| 192.168.8.12 | tablet-device | fping, nmap |
+| 192.168.8.13 | router-device | fping |
+| 192.168.8.14 | smart-device-1 | fping |
+| 192.168.8.15 | smart-device-2 | ARP, fping |
+| 192.168.8.16 | iot-device | ARP, fping |
 
 ## Observations
 - Some hosts (e.g., mobile devices, tablets) only respond to specific discovery methods like ARP or persistent `fping` due to power-saving modes.

@@ -139,7 +139,7 @@ bash ip_scanner_project/scripts/run_tui.sh
 Tables show only **live hosts** with:
 ```
 192.168.0.1    _gateway           AA:BB:CC:DD:EE:FF  Vendor Inc    22,80,443
-192.168.0.198  desktop-pc         A8:5E:45:56:62:57  ASUSTek       80,3389
+192.168.0.100  desktop-pc          AA:BB:CC:DD:EE:FF  ASUSTek       80,3389
 ```
 
 ## Performance
