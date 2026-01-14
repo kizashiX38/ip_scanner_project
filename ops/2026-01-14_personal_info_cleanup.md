@@ -16,7 +16,7 @@ Performed a thorough review of the entire repository to identify and remove all 
 
 ### 2. Hardcoded Network Interface Names
 **Location**: `README.md`
-- **Found**: `enxa453eed5dd26` and `wlp99s0` in example code
+- **Found**: Hardcoded interface names containing MAC address components in example code
 - **Risk**: Contains MAC address components, hardware-specific
 - **Fix**: Replaced with generic examples (`eth0`, `wlan0`) and noted auto-detection
 - **Status**: ✅ Removed
