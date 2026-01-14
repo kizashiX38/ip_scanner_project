@@ -23,14 +23,9 @@ Performed a thorough review of the entire repository to identify and remove all 
 
 ### 3. Personal Device Hostnames
 **Location**: `ops/2026-01-14_network_scan.md`
-- **Found**: Multiple personal device names:
-  - `iPhone` → `mobile-device`
-  - `ADY-LX9` → `tablet-device`
-  - `H88H` → `smart-device-1`
-  - `NX779J` → `smart-device-2`
-  - `yeelink-light-color2_miapfef9` → `iot-device`
+- **Found**: Multiple personal device names and brand identifiers
 - **Risk**: Identifies specific devices and brands in user's network
-- **Fix**: Replaced with generic device type placeholders
+- **Fix**: Replaced with generic device type placeholders (e.g., `mobile-device`, `tablet-device`, `smart-device`, `iot-device`)
 - **Status**: ✅ Removed
 
 ## Verification Process
